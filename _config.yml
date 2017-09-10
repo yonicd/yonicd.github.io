@@ -24,6 +24,7 @@ description: RStats blog
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
+  Projects: "projects"
   Resources:
     - Metrum Research: "http://www.metrumrg.com/"
     - R-bloggers: "http://www.r-bloggers.com"
