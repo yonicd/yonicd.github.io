@@ -19,7 +19,7 @@ This is a list of R packages that have been published on CRAN and/or are still b
 
   - [vcs](https://github.com/metrumresearchgroup/vcs) : Managing, inspecting and sourcing remote repositories such as github, bitbucket and subversion.
 
-- Shiny Modules
+- Shiny Apps, Modules and Gadgets
   - [regexSelect](https://github.com/yonicd/regexSelect) : R package to enable regular expression searches within a shiny selectize object.
 
   - [shinyHeatmaply](https://github.com/yonicd/shinyHeatmaply) : Access functionality of the [heatmaply](https://github.com/talgalili/heatmaply) package through Shiny application and Shiny gadget.
