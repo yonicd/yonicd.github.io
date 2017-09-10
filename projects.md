@@ -33,11 +33,12 @@ This is a list of R packages that have been published on CRAN and/or are still b
 - [gdigest](https://github.com/yonicd/gdigest) : Wrapper for memoise that lets users cache R objects on a remote repository. Works for objects created in console and Shiny. This is meant for multiple users to share cache via a repository, and increase efficiency of shiny apps that have heavy simulations. 
 
 
-Random thoughts that weren't packaged
+Random thoughts that weren't packaged, but are still useful.
 
 - [Elections](https://github.com/yonicd/Elections) : Real time tracker and analysis of 2016 USA Elections
 
 - [CIMDO](https://github.com/yonicd/CIMDO) : Shiny Dashboard for the IMF CIMDO model.
 
-- [supermarketprices](https://github.com/yonicd/supermarketprices) : read daily suprmarket data in all israel stores
+- [supermarketprices](https://github.com/yonicd/supermarketprices) : Read daily suprmarket data in all israel stores
 
+- [taseR](https://github.com/yonicd/taseR) : API to read data from Tel Aviv Stock Exchange (TASE) website to R 
