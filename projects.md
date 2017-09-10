@@ -26,7 +26,7 @@ This is a list of R packages that have been published on CRAN and/or are still b
 
 - [d3Tree](https://github.com/metrumresearchgroup/d3Tree) : Create and customize interactive collapsible D3 trees using the D3 JavaScript library and the htmlwidgets package. These trees can be used directly from the R console, from RStudio, in Shiny apps and R Markdown documents. When in Shiny the tree layout is observed by the server and can be used as a reactive filter of structured data.
 
-- [fluidSpline] (https://github.com/metrumresearchgroup/fluidSpline): Htmlwidget that binds [Spline Editor](https://bl.ocks.org/mbostock/4342190) by Mike Bostock to create an observable object in Shiny
+- [fluidSpline](https://github.com/metrumresearchgroup/fluidSpline): Htmlwidget that binds [Spline Editor](https://bl.ocks.org/mbostock/4342190) by Mike Bostock to create an observable object in Shiny
 
 - [shinyHeatmaply](https://github.com/yonicd/shinyHeatmaply) : Access functionality of the [heatmaply](https://github.com/talgalili/heatmaply) package through Shiny application and Shiny gadget.
 
