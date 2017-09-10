@@ -8,7 +8,7 @@ This is a list of R packages that have been published on CRAN and/or are still b
 
 (Not in any logical order, just what came to mind when I wrote this...)
 
-- Reprocubility
+- Reproduciblity
   - [ggedit](https://github.com/metrumresearchgroup/ggedit) : Interactively edit ggplot2 layer and theme aesthetics definitions.
 
   - [sinew](https://github.com/metrumresearchgroup/sinew) : Create roxygen2 skeleton populated with information scraped from the within the function script. Also creates field entries for imports in the DESCRIPTION and import in the NAMESPACE files. Can be run from the R console or through the RStudio addin menu.
