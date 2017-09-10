@@ -24,7 +24,7 @@ This is a list of R packages that have been published on CRAN and/or are still b
 
   - [shinyHeatmaply](https://github.com/yonicd/shinyHeatmaply) : Access functionality of the [heatmaply](https://github.com/talgalili/heatmaply) package through Shiny application and Shiny gadget.
 
-- htmlwidgets
+- Htmlwidgets
 
   - [slickR](https://github.com/metrumresearchgroup/slickR) : Create and customize interactive carousels using the Slick JavaScript library and the htmlwidgets package. The carousels can contain plots produced in R, images, iframes, videos and other htmlwidgets. These carousels can be used directly from the R console, from RStudio, in Shiny apps and R Markdown documents.
 
