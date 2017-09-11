@@ -1,16 +1,16 @@
 ---
 layout: page
-title: Rearch and Publications
+title: Research and Publications
 ---
 
-Publications
-
-  - Nowcasting
-  - Qmodel
-  
 Current Research
 
   - HMM Revisions
   - cimdoR
   - LMMEN
+
+Publications
+
+  - Nowcasting
+  - Qmodel
   
