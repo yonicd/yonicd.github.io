@@ -1,5 +1,5 @@
 ---
-layout: research
+layout: page
 title: Publications and Research Projects
 ---
 
