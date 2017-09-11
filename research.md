@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Publications and Research Projects
+title: Rearch and Publications
 ---
 
 Publications
