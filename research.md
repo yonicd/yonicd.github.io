@@ -12,7 +12,11 @@ Project
 
 Publications
 
-  - Dafnai G., Sidi J. (2010) Nowcasting Israel GDP Using High Frequency Macroeconomic. Bank of Israel, Discussion Paper No. 2010.16. http://www.boi.org.il/deptdata/mehkar/papers/dp1016e.pdf
+  - [Dafnai G., Sidi J. (2010) Nowcasting Israel GDP Using High Frequency Macroeconomic. Bank of Israel, Discussion Paper No. 2010.16.](http://www.boi.org.il/deptdata/mehkar/papers/dp1016e.pdf)
   
-  - Friedman, Amit, Zvi Hercowitz, and Jonathan Sidi. "Fiscal policy in an open economy." The BE Journal of Macroeconomics 16.1 (2016): 25-46. https://doi.org/10.1515/bejm-2015-0064
+  - [Friedman, Amit, Zvi Hercowitz, and Jonathan Sidi. "Fiscal policy in an open economy." The BE Journal of Macroeconomics 16.1 (2016): 25-46.](https://doi.org/10.1515/bejm-2015-0064)
+  
+Posters
+
+  - Avner Sidi, MD, Nikolaus Gravenstein, MD, Chris Giordano, MD, Jonathan Sidi (2017, September). "Grading Intraoperative Physiological 'Instability' Using an Expert Review". Poster session presented at the American Society of Anesthesiologists Annual Meeting, Boston, MA.
   
