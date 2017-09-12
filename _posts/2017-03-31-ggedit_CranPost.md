@@ -5,6 +5,8 @@ subtitle: Crantastic!
 tags: [Shiny, ggplot2, Reproducibility]
 ---
 
+(post originally published on [r-posts](http://r-posts.com/ggedit-0-2-0-is-now-on-cran/))
+
 We are pleased to announce the release of the ggedit package on [CRAN](https://cran.r-project.org/web/packages/ggedit/index.html). 
 
 To install the package you can call the standard R command

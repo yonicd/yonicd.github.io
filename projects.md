@@ -8,7 +8,7 @@ This is a list of R packages that have been published on CRAN and/or are still b
 
 (Not in any logical order, just what came to mind when I wrote this...)
 
-- Reproduciblity
+- *Reproduciblity*
   - [ggedit](https://github.com/metrumresearchgroup/ggedit) : Interactively edit ggplot2 layer and theme aesthetics definitions. [CRAN](https://cran.r-project.org/web/packages/ggedit/index.html)
 
   - [sinew](https://github.com/metrumresearchgroup/sinew) : Create roxygen2 skeleton populated with information scraped from the within the function script. Also creates field entries for imports in the DESCRIPTION and import in the NAMESPACE files. Can be run from the R console or through the RStudio addin menu. [CRAN](https://cran.r-project.org/web/packages/sinew/index.html)
@@ -24,7 +24,7 @@ This is a list of R packages that have been published on CRAN and/or are still b
 
   - [shinyHeatmaply](https://github.com/yonicd/shinyHeatmaply) : Access functionality of the [heatmaply](https://github.com/talgalili/heatmaply) package through Shiny application and Shiny gadget. [CRAN](https://cran.r-project.org/web/packages/shinyHeatmaply/index.html)
 
-- Htmlwidgets
+- *Htmlwidgets*
 
   - [slickR](https://github.com/metrumresearchgroup/slickR) : Create and customize interactive carousels using the Slick JavaScript library and the htmlwidgets package. The carousels can contain plots produced in R, images, iframes, videos and other htmlwidgets. These carousels can be used directly from the R console, from RStudio, in Shiny apps and R Markdown documents. [CRAN](https://cran.r-project.org/web/packages/slickR/index.html)
 
@@ -34,11 +34,11 @@ This is a list of R packages that have been published on CRAN and/or are still b
 
   - [fluidSpline](https://github.com/metrumresearchgroup/fluidSpline): Htmlwidget that binds [Spline Editor](https://bl.ocks.org/mbostock/4342190) by Mike Bostock to create an observable object in Shiny
 
-- Stats
+- *Stats*
   - [lmmen](https://github.com/yonicd/lmmen) : R package that solves the linear mixed model elastic net. [CRAN](https://cran.r-project.org/web/packages/lmmen/index.html)
 
 
-Random thoughts that weren't packaged, but are still useful.
+*Random thoughts that weren't packaged, but are still useful.*
 
 - [Elections](https://github.com/yonicd/Elections) : Real time tracker and analysis of 2016 USA Elections
 
