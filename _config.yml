@@ -62,7 +62,7 @@ author:
   github: yonicd    # eg. daattali
   twitter: yoniceedee   # eg. daattali
   linkedin: yonicd  # eg. daattali
-  stackoverflow: yourlink  # eg. "3218296/yonicd"
+  stackoverflow: 3218296/yonicd  # eg. ""
 
 # Select which links to show in the footer
 footer-links-active:
