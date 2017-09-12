@@ -5,8 +5,6 @@ subtitle: Crantastic!
 tags: [Shiny, ggplot2, Reproducibility]
 ---
 
-(post originally published on [r-posts](http://r-posts.com/ggedit-0-2-0-is-now-on-cran/))
-
 We are pleased to announce the release of the ggedit package on [CRAN](https://cran.r-project.org/web/packages/ggedit/index.html). 
 
 To install the package you can call the standard R command
@@ -87,3 +85,5 @@ To learn more about additional open-source software packages developed by Metrum
 <em>
 Contact: For questions and comments, feel free to email me at: yonis@metrumrg.com or open an issue in <a href="https://github.com/metrumresearchgroup/ggedit/issues" target="_blank">github</a>.
 </em>
+
+(post originally published on [r-posts](http://r-posts.com/ggedit-0-2-0-is-now-on-cran/))
