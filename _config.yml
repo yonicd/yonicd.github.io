@@ -75,7 +75,7 @@ footer-links-active:
   reddit: false
   linkedin: false
   xing: false
-  stackoverflow: false
+  stackoverflow: true
   snapchat: false
   instagram: false
   youtube: false
