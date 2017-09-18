@@ -4,12 +4,12 @@ title: Projects
 subtitle: Odds and Ends
 ---
 
-This is a list of R packages that have been published on CRAN and/or are still being developed on Github. Many of the projects are part of [open tools](https://www.metrumrg.com/try-open-source-tools/) developed in Metrum Research Group. You will see an icon showing of Metrum where this is relevant. <img src="https://www.metrumrg.com/wp-content/themes/metrum/public/img/footer-logo.png", height="50", length="100">
+This is a list of R packages that have been published on CRAN and/or are still being developed on Github. Many of the projects are part of [open tools](https://www.metrumrg.com/try-open-source-tools/) developed in Metrum Research Group. You will see an icon <img src='img/mrgicon.png' height='15', width='15'> where this is relevant.
 
 (Not in any logical order, just what came to mind when I wrote this...)
 
 - *Reproduciblity*
-  - [ggedit](https://github.com/metrumresearchgroup/ggedit) : Interactively edit ggplot2 layer and theme aesthetics definitions. [CRAN](https://cran.r-project.org/web/packages/ggedit/index.html)
+  - [ggedit](https://github.com/metrumresearchgroup/ggedit) : Interactively edit ggplot2 layer and theme aesthetics definitions. [CRAN](https://cran.r-project.org/web/packages/ggedit/index.html) <img src='img/mrgicon.png' height='15', width='15'>
 
   - [sinew](https://github.com/metrumresearchgroup/sinew) : Create roxygen2 skeleton populated with information scraped from the within the function script. Also creates field entries for imports in the DESCRIPTION and import in the NAMESPACE files. Can be run from the R console or through the RStudio addin menu. [CRAN](https://cran.r-project.org/web/packages/sinew/index.html)
 
