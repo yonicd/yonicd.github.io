@@ -4,7 +4,9 @@ title: Projects
 subtitle: Odds and Ends
 ---
 
-This is a list of R packages that have been published on CRAN and/or are still being developed on Github. Many of the projects are part of [open tools](https://www.metrumrg.com/try-open-source-tools/) developed in Metrum Research Group. You will see an icon [![](img/mrgicon.png)](https://www.metrumrg.com/open-science) where this is relevant.
+This is a list of R packages that have been published on CRAN and/or are still being developed on Github. 
+
+Many of the projects are part of [open tools](https://www.metrumrg.com/try-open-source-tools/) developed in Metrum Research Group. The icon [![](img/mrgicon.png)](https://www.metrumrg.com/open-science) denotes that a project is a Metrum project. 
 
 (Not in any logical order, just what came to mind when I wrote this...)
 
