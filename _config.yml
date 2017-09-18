@@ -101,7 +101,7 @@ url-pretty: "yonicd.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 disqus: "yonicd"
 
 # Fill in your Google Analytics ID to track your website using GA
-#google_analytics: "UA-84988961-2"
+google_analytics: "UA-84988961-2"
 
 # Google Tag Manager ID
 #gtm: ""
