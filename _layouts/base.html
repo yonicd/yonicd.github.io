@@ -11,6 +11,7 @@ common-googlefonts:
 common-js:
   - "/js/jquery-1.11.2.min.js"
   - "/js/bootstrap.min.js"
+  - "/js/js.cookie.js"
   - "/js/main.js"
 ---
 
@@ -30,6 +31,12 @@ common-js:
     {% include footer.html %}
   
     {% include footer-scripts.html %}
+    
+    {% if page.addthis-plugin %} 
+      <!-- AddThis plugin (floating social media sharing buttons on the left of each post) -->
+      <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57d65a4d97789dd1"></script>
+    {% endif %}
+    
   
   </body>
 </html>
