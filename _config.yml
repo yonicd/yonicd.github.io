@@ -141,7 +141,6 @@ defaults:
       show-share: true # add sharing buttons to all blog posts
       social-share: true # add social media sharing buttons to all blog posts
       show-subscribe: true # add subscribe email to all blog posts
-      addthis-plugin: true
   -
     scope:
       path: "" # all files
