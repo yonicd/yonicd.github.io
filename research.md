@@ -18,5 +18,5 @@ Publications
   
 Posters
 
-  - Avner Sidi, MD, Nikolaus Gravenstein, MD, Chris Giordano, MD, Jonathan Sidi (2017, September). "Grading Intraoperative Physiological 'Instability' Using an Expert Review". Poster session presented at the American Society of Anesthesiologists Annual Meeting, Boston, MA.
+  - Avner Sidi, MD, Nikolaus Gravenstein, MD, Chris Giordano, MD, Jonathan Sidi (2017, October). "Grading Intraoperative Physiological 'Instability' Using an Expert Review". Poster session to be presented at the American Society of Anesthesiologists Annual Meeting, Boston, MA.
   
