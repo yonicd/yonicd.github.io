@@ -21,6 +21,5 @@ css: "/css/search.css"
   })();
 </script>
 <gcse:search></gcse:search>
-<gcse:searchbox></gcse:searchbox>
 <gcse:searchresults></gcse:searchresults>
 </div>
