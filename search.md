@@ -5,9 +5,7 @@ css: "/css/search.css"
 ---
   
 # Search yonicd.github.io
-  
-### Using Google Search
-  
+
 <div id="google-custom-search">
 <script>
   (function() {
