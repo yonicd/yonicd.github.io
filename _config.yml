@@ -140,6 +140,7 @@ defaults:
       layout: "post"
       comments: true  # add comments to all blog posts
       social-share: true # add social media sharing buttons to all blog posts
+      show-subscribe: true # add subscribe email to all blog posts
       addthis-plugin: true
   -
     scope:
