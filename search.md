@@ -20,6 +20,5 @@ css: "/css/search.css"
     s.parentNode.insertBefore(gcse, s);
   })();
 </script>
-<gcse:search></gcse:search>
-<gcse:searchresults></gcse:searchresults>
+<gcse:searchbox></gcse:searchbox>
 </div>
