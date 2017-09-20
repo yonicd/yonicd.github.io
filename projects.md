@@ -12,34 +12,35 @@ Many of the projects are part of [open tools](https://www.metrumrg.com/try-open-
 (Not in any logical order, just what came to mind when I wrote this...)
 
 - *Reproduciblity*
-  - **ggedit** : Interactively edit ggplot2 layer and theme aesthetics definitions. [![](img/ghicon.jpeg)](https://github.com/metrumresearchgroup/ggedit) [![](img/RIcon.png)](https://cran.r-project.org/web/packages/ggedit/index.html) [![](img/mrgiconnew.jpg)](https://www.metrumrg.com/open-science)
+  - **ggedit** : Interactively edit ggplot2 layer and theme aesthetics definitions. [![](img/mrgiconnew.jpg)](https://www.metrumrg.com/open-science)[![](img/ghicon.jpeg)](https://github.com/metrumresearchgroup/ggedit)[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/ggedit?color=blue)](https://cran.r-project.org/package=ggedit)![downloads](http://cranlogs.r-pkg.org/badges/ggedit)
 
-  - **sinew** : Create roxygen2 skeleton populated with information scraped from the within the function script. Also creates field entries for imports in the DESCRIPTION and import in the NAMESPACE files. Can be run from the R console or through the RStudio addin menu. [![](img/ghicon.jpeg)](https://github.com/metrumresearchgroup/sinew) [![](img/RIcon.png)](https://cran.r-project.org/web/packages/sinew/index.html)  [![](img/mrgiconnew.jpg)](https://www.metrumrg.com/open-science)
+  - **sinew** : Create roxygen2 skeleton populated with information scraped from the within the function script. Also creates field entries for imports in the DESCRIPTION and import in the NAMESPACE files. Can be run from the R console or through the RStudio addin menu. [![](img/mrgiconnew.jpg)](https://www.metrumrg.com/open-science)[![](img/ghicon.jpeg)](https://github.com/metrumresearchgroup/sinew)[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/sinew?color=blue)](https://cran.r-project.org/package=sinew)![downloads](http://cranlogs.r-pkg.org/badges/sinew)
 
-  - **texPreview** : Compile and preview snippets of LaTeX. Can be used directly from the R console, from RStudio, in Shiny apps and R Markdown documents. Must have pdflatex or xelatex or lualatex in PATH. [![](img/ghicon.jpeg)](https://github.com/metrumresearchgroup/texPreview) [![](img/RIcon.png)](https://cran.r-project.org/web/packages/texPreview/index.html) [![](img/mrgiconnew.jpg)](https://www.metrumrg.com/open-science)
+  - **texPreview** : Compile and preview snippets of LaTeX. Can be used directly from the R console, from RStudio, in Shiny apps and R Markdown documents. Must have pdflatex or xelatex or lualatex in PATH. [![](img/mrgiconnew.jpg)](https://www.metrumrg.com/open-science)[![](img/ghicon.jpeg)](https://github.com/metrumresearchgroup/texPreview)[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/texPreview?color=blue)](https://cran.r-project.org/package=texPreview)![downloads](http://cranlogs.r-pkg.org/badges/texPreview)
 
-  - **gdigest** : Wrapper for memoise that lets users cache R objects on a remote repository. Works for objects created in console and Shiny. This is meant for multiple users to share cache via a repository, and increase efficiency of shiny apps that have heavy simulations. [![](img/ghicon.jpeg)](https://github.com/yonicd/gdigest) [![](img/mrgiconnew.jpg)](https://www.metrumrg.com/open-science)
+  - **gdigest** : Wrapper for memoise that lets users cache R objects on a remote repository. Works for objects created in console and Shiny. This is meant for multiple users to share cache via a repository, and increase efficiency of shiny apps that have heavy simulations.[![](img/mrgiconnew.jpg)](https://www.metrumrg.com/open-science)[![](img/ghicon.jpeg)](https://github.com/yonicd/gdigest)
 
-  - **vcs** : Managing, inspecting and sourcing remote repositories such as github, bitbucket and subversion. [![](img/ghicon.jpeg)](https://github.com/metrumresearchgroup/vcs) [![](img/mrgiconnew.jpg)](https://www.metrumrg.com/open-science)
+  - **vcs** : Managing, inspecting and sourcing remote repositories such as github, bitbucket and subversion.[![](img/mrgiconnew.jpg)](https://www.metrumrg.com/open-science)[![](img/ghicon.jpeg)](https://github.com/metrumresearchgroup/vcs)
 
 - Shiny Apps, Modules and Gadgets
   - **regexSelect** : R package to enable regular expression searches within a shiny selectize object. [![](img/ghicon.jpeg)](https://github.com/yonicd/regexSelect)
 
-  - **shinyHeatmaply** : Access functionality of the [heatmaply](https://github.com/talgalili/heatmaply) package through Shiny application and Shiny gadget. [![](img/ghicon.jpeg)](https://github.com/yonicd/shinyHeatmaply) [![](img/RIcon.png)](https://cran.r-project.org/web/packages/shinyHeatmaply/index.html)
+  - **shinyHeatmaply** : Access functionality of the [heatmaply](https://github.com/talgalili/heatmaply) package through Shiny application and Shiny gadget. [![](img/ghicon.jpeg)](https://github.com/yonicd/shinyHeatmaply) [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/shinyHeatmaply?color=blue)](https://cran.r-project.org/package=shinyHeatmaply) ![downloads](http://cranlogs.r-pkg.org/badges/shinyHeatmaply)
+
 
 - *Htmlwidgets*
 
-  - **slickR** : Create and customize interactive carousels using the Slick JavaScript library and the htmlwidgets package. The carousels can contain plots produced in R, images, iframes, videos and other htmlwidgets. These carousels can be used directly from the R console, from RStudio, in Shiny apps and R Markdown documents. [![](img/ghicon.jpeg)](https://github.com/metrumresearchgroup/slickR) [![](img/RIcon.png)](https://cran.r-project.org/web/packages/slickR/index.html) [![](img/mrgiconnew.jpg)](https://www.metrumrg.com/open-science)
+  - **slickR** : Create and customize interactive carousels using the Slick JavaScript library and the htmlwidgets package. The carousels can contain plots produced in R, images, iframes, videos and other htmlwidgets. These carousels can be used directly from the R console, from RStudio, in Shiny apps and R Markdown documents. [![](img/mrgiconnew.jpg)](https://www.metrumrg.com/open-science) [![](img/ghicon.jpeg)](https://github.com/metrumresearchgroup/slickR)
+[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/slickR?color=blue)](https://cran.r-project.org/package=slickR) ![downloads](http://cranlogs.r-pkg.org/badges/slickR)
 
-  - **jsTree** : Create and customize interactive trees using the jQuery jsTree plugin library and the htmlwidgets package. These trees can be used directly from the R console, from RStudio, in Shiny apps and R Markdown documents [![](img/ghicon.jpeg)](https://github.com/metrumresearchgroup/jsTree) [![](img/mrgiconnew.jpg)](https://www.metrumrg.com/open-science)
+  - **jsTree** : Create and customize interactive trees using the jQuery jsTree plugin library and the htmlwidgets package. These trees can be used directly from the R console, from RStudio, in Shiny apps and R Markdown documents.[![](img/mrgiconnew.jpg)](https://www.metrumrg.com/open-science)[![](img/ghicon.jpeg)](https://github.com/metrumresearchgroup/jsTree)
 
-  - **d3Tree** : Create and customize interactive collapsible D3 trees using the D3 JavaScript library and the htmlwidgets package. These trees can be used directly from the R console, from RStudio, in Shiny apps and R Markdown documents. When in Shiny the tree layout is observed by the server and can be used as a reactive filter of structured data. [![](img/ghicon.jpeg)](https://github.com/metrumresearchgroup/d3Tree) [![](img/RIcon.png)](https://cran.r-project.org/web/packages/d3Tree/index.html) [![](img/mrgiconnew.jpg)](https://www.metrumrg.com/open-science)
+  - **d3Tree** : Create and customize interactive collapsible D3 trees using the D3 JavaScript library and the htmlwidgets package. These trees can be used directly from the R console, from RStudio, in Shiny apps and R Markdown documents. When in Shiny the tree layout is observed by the server and can be used as a reactive filter of structured data. [![](img/mrgiconnew.jpg)](https://www.metrumrg.com/open-science)[![](img/ghicon.jpeg)](https://github.com/metrumresearchgroup/d3Tree)[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/d3Tree?color=blue)](https://cran.r-project.org/package=d3Tree)![downloads](http://cranlogs.r-pkg.org/badges/d3Tree)
 
-  - **fluidSpline** : Htmlwidget that binds [Spline Editor](https://bl.ocks.org/mbostock/4342190) by Mike Bostock to create an observable object in Shiny [![](img/ghicon.jpeg)](https://github.com/metrumresearchgroup/fluidSpline) [![](img/mrgiconnew.jpg)](https://www.metrumrg.com/open-science)
+  - **fluidSpline** : Htmlwidget that binds [Spline Editor](https://bl.ocks.org/mbostock/4342190) by Mike Bostock to create an observable object in Shiny. [![](img/mrgiconnew.jpg)](https://www.metrumrg.com/open-science)[![](img/ghicon.jpeg)](https://github.com/metrumresearchgroup/fluidSpline)
 
 - *Stats*
-  - **lmmen** : R package that solves the linear mixed model elastic net. [![](img/ghicon.jpeg)](https://github.com/yonicd/lmmen) [![](img/RIcon.png)](https://cran.r-project.org/web/packages/lmmen/index.html)
-
+  - **lmmen** : R package that solves the linear mixed model elastic net. [![](img/ghicon.jpeg)](https://github.com/yonicd/lmmen)[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/lmmen?color=blue)](https://cran.r-project.org/package=lmmen)![downloads](http://cranlogs.r-pkg.org/badges/lmmen)
 
 *Random thoughts that weren't packaged, but are still useful.*
 
