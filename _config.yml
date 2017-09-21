@@ -92,7 +92,7 @@ share-links-active:
   facebook: true
   google: false
   linkedin: true
-
+  
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
 url-pretty: "yonicd.github.io"  # eg. "deanattali.com/beautiful-jekyll"

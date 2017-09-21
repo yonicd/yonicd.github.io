@@ -12,6 +12,23 @@ layout: base
         {% include social-share.html %}
       {% endif %}
 
+      {% if page.repo %}
+        {% if page.github.size>0 %}
+          {% for badge in page.github %}
+          {% if badge=='star'%}
+              <a class="github-button" href="https://github.com/{{ repo }}" data-show-count="true" aria-label="Star {{ repo }} on GitHub">Star</a> 
+          {% endif %}
+          {% if badge=='fork'%}
+             <a class="github-button" href="https://github.com/{{ repo }}/fork" data-show-count="true" aria-label="Fork {{ repo }} on GitHub">Fork</a>
+          {% endif %}
+          {% if badge=='issue'%}
+              <a class="github-button" href="https://github.com/{{ repo }}/issues" data-show-count="true" aria-label="Issue {{ repo }} on GitHub">Issue</a>
+          {% endif %}
+          {% endfor %}
+        {% endif %}
+      {% endif %}
+      
+
       <article role="main" class="blog-post">
         {{ content }}
       </article>
