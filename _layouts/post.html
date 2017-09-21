@@ -37,13 +37,13 @@ layout: base
         {% endif %}
       {% endif %}
       
-       {% if page.cranname %}
+       {% if page.cran %}
         {% if page.cranbadge.size>0 %}
-          {% for badge in page.cranbadge %}
-          {% if badge=='status'%}
+          {% for cbadge in page.cranbadge %}
+          {% if cbadge=='status'%}
       <a href="https://cran.r-project.org/package={{ page.cran }}"><img src="https://www.r-pkg.org/badges/version/{{ page.cran }}?color=blue" alt="CRAN_Status_Badge" /></a>
           {% endif %}
-          {% if badge=='downloads'%}
+          {% if cbadge=='downloads'%}
       <img src="https://cranlogs.r-pkg.org/badges/grand-total/{{ page.cran }}" alt="downloads" />
           {% endif %}
           {% endfor %}
