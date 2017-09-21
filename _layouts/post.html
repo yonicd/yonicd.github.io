@@ -18,19 +18,38 @@ layout: base
           {% if badge=='follow'%}
               <a class="github-button" href="https://github.com/yonicd" data-show-count="true" aria-label="Follow @yonicd on GitHub">Follow @yonicd</a>
           {% endif %}
+          {% if badge=='watch'%}
+              <a class="github-button" href="https://github.com/yonicd/{{ page.repo }}/subscription" data-show-count="true" aria-label="Watch {{ page.repo }} on GitHub">Watch</a>
+          {% endif %}
           {% if badge=='star'%}
               <a class="github-button" href="https://github.com/{{ page.repo }}" data-show-count="true" aria-label="Star {{ page.repo }} on GitHub">Star</a> 
           {% endif %}
           {% if badge=='fork'%}
-             <a class="github-button" href="https://github.com/{{ page.repo }}/{{ badge }}" data-show-count="true" aria-label="Fork {{ page.repo }} on GitHub">Fork</a>
+             <a class="github-button" href="https://github.com/{{ page.repo }}/fork" data-show-count="true" aria-label="Fork {{ page.repo }} on GitHub">Fork</a>
           {% endif %}
-          {% if badge=='issues'%}
-              <a class="github-button" href="https://github.com/{{ page.repo }}/{{ badge }}" data-show-count="true" aria-label="Issue {{ page.repo }} on GitHub">Issue</a>
+          {% if badge=='issue'%}
+              <a class="github-button" href="https://github.com/{{ page.repo }}/issues" data-show-count="true" aria-label="Issue {{ page.repo }} on GitHub">Issue</a>
+          {% endif %}
+          {% if badge=='download'%}
+              <a class="github-button" href="https://github.com/{{ page.repo }}/archive/master.zip" aria-label="Download {{ page.repo }} on GitHub">Download</a>
           {% endif %}
           {% endfor %}
         {% endif %}
       {% endif %}
       
+       {% if page.cranname %}
+        {% if page.cranbadge.size>0 %}
+          {% for badge in page.cranbadge %}
+          {% if badge=='status'%}
+      <a href="https://cran.r-project.org/package={{ page.cran }}"><img src="https://www.r-pkg.org/badges/version/{{ page.cran }}?color=blue" alt="CRAN_Status_Badge" /></a>
+          {% endif %}
+          {% if badge=='downloads'%}
+      <img src="https://cranlogs.r-pkg.org/badges/grand-total/{{ page.cran }}" alt="downloads" />
+          {% endif %}
+          {% endfor %}
+        {% endif %}
+      {% endif %}
+
 
       <article role="main" class="blog-post">
         {{ content }}
