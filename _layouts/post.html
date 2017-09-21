@@ -15,7 +15,7 @@ layout: base
       {% if page.gh_repo %}
       
       {% assign gh_split =  page.gh_repo | split:/  %}
-      {% assign gh_user =  gh_split[0]  %}
+      {% assign gh_user =  gh_split[1]  %}
       
       <p>
         {% if page.gh_badge.size>0 %}
