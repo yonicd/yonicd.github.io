@@ -8,12 +8,6 @@ gh_repo: yonicd/regexSelect
 gh_badge: [follow, star, fork, issue]
 ---
 
-<!---
-<a class="github-button" href="https://github.com/yonicd" data-show-count="true" aria-label="Follow @yonicd on GitHub">Follow @yonicd</a> <a class="github-button" href="https://github.com/yonicd/regexSelect" data-show-count="true" aria-label="Star yonicd/regexSelect on GitHub">Star</a> <a class="github-button" href="https://github.com/yonicd/regexSelect/fork" data-show-count="true" aria-label="Fork yonicd/regexSelect on GitHub">Fork</a> <a class="github-button" href="https://github.com/yonicd/regexSelect/issues" data-show-count="true" aria-label="Issue yonicd/regexSelect on GitHub">Issue</a>
-
-[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/regexSelect?color=blue)](https://cran.r-project.org/package=regexSelect)![downloads](https://cranlogs.r-pkg.org/badges/grand-total/regexSelect)
--->
-
 regexSelect is a small package that uses [Shiny modules](https://shiny.rstudio.com/articles/modules.html) to solve a problem in Shiny selectize objects - [regular expression](https://www.rstudio.com/wp-content/uploads/2016/09/RegExCheatsheet.pdf) (regex) searching. You can quickly filter the values in the selectize object, while being able to add that new regex query to the selectize list. 
 
 This is great for long lists, since you can return multiple item simultaneously without needing to endlessly click items in a list!
