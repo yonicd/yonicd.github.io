@@ -7,7 +7,7 @@ tags: [shiny, regex]
 <!-- Place this tag where you want the button to render. -->
 <a class="github-button" href="https://github.com/yonicd/regexSelect" data-show-count="true" aria-label="Star yonicd/regexSelect on GitHub">Star</a>
 
-[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/regexSelect?color=blue)](https://cran.r-project.org/package=regexSelect)![downloads](http://cranlogs.r-pkg.org/badges/grand-total/regexSelect) | 
+[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/regexSelect?color=blue)](https://cran.r-project.org/package=regexSelect)![downloads](https://cranlogs.r-pkg.org/badges/grand-total/regexSelect) | 
 [![GitHub forks](https://img.shields.io/github/forks/yonicd/regexSelect.svg)](https://github.com/yonicd/regexSelect/network)[![GitHub stars](https://img.shields.io/github/stars/yonicd/regexSelect.svg)](https://github.com/yonicd/regexSelect/stargazers)[![GitHub issues](https://img.shields.io/github/issues/yonicd/regexSelect.svg)](https://github.com/yonicd/regexSelect/issues)
 
 regexSelect is a small package that uses [Shiny modules](https://shiny.rstudio.com/articles/modules.html) to solve a problem in Shiny selectize objects - [regular expression](https://www.rstudio.com/wp-content/uploads/2016/09/RegExCheatsheet.pdf) (regex) searching. You can quickly filter the values in the selectize object, while being able to add that new regex query to the selectize list. 
