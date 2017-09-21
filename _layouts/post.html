@@ -17,7 +17,7 @@ layout: base
       {% assign gh_split =  page.gh_repo | split:'/'  %}
       {% assign gh_user =  gh_split[0]  %}
       
-      <p>
+      <div class="badge">
         {% if page.gh_badge.size>0 %}
           {% for badge in page.gh_badge %}
             {% case badge %}
@@ -36,7 +36,7 @@ layout: base
             {% endcase %}
           {% endfor %}
         {% endif %}
-        </p>
+        </div>
       {% endif %}
       
        {% if page.cran %}
