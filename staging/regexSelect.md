@@ -10,7 +10,7 @@ tags: [shiny, regex]
 <!-- Place this tag where you want the button to render. -->
 <a class="github-button" href="https://github.com/yonicd/regexSelect" data-show-count="true" aria-label="Star yonicd/regexSelect on GitHub">Star</a>
 <!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="https://github.com/yonicd/regexSelect/subscription" data-show-count="true" aria-label="Watch yonicd/regexSelect on GitHub">Watch</a>
+<a class="github-button" href="https://github.com/yonicd/regexSelect/subscription" data-size="large" data-show-count="true" aria-label="Watch yonicd/regexSelect on GitHub">Watch</a>
 <!-- Place this tag where you want the button to render. -->
 <a class="github-button" href="https://github.com/yonicd/regexSelect/fork" data-show-count="true" aria-label="Fork yonicd/regexSelect on GitHub">Fork</a>
 
