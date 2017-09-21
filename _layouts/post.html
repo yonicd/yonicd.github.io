@@ -42,11 +42,11 @@ layout: base
        {% if page.cran %}
        <p>
         {% if page.cran_badge.size>0 %}
-          {% for cbadge in page.cranbadge %}
-          {% if cbadge=='status'%}
+          {% for badge in page.cran_badge %}
+          {% if badge=='status'%}
       <a href="https://cran.r-project.org/package={{ page.cran }}"><img src="https://www.r-pkg.org/badges/version/{{ page.cran }}?color=blue" alt="CRAN_Status_Badge" /></a>
           {% endif %}
-          {% if cbadge=='downloads'%}
+          {% if badge=='downloads'%}
       <img src="https://cranlogs.r-pkg.org/badges/grand-total/{{ page.cran }}" alt="downloads" />
           {% endif %}
           {% endfor %}
