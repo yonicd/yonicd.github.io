@@ -14,14 +14,15 @@ layout: base
       
       {% if page.gh_repo %}
       
-      {% assign gh_user = 'yonicd' %}
+      {% assign gh_split =  page.gh_repo | split:/  %}
+      {% assign gh_user =  gh_split[0]  %}
       
       <p>
         {% if page.gh_badge.size>0 %}
           {% for badge in page.gh_badge %}
             {% case badge %}
               {% when 'follow'%}
-                <a class="github-button" href="https://github.com/{{ gh_user }}" data-show-count="true" aria-label="Follow @ {{ gh_user }} on GitHub">Follow @ {{ gh_user }}</a>
+                <a class="github-button" href="https://github.com/{{ gh_user }}" data-show-count="true" aria-label="Follow @{{ gh_user }} on GitHub">Follow @{{ gh_user }}</a>
               {% when 'watch'%}
                 <a class="github-button" href="https://github.com/{{ gh_user }}/{{ page.gh_repo }}/subscription" data-show-count="true" aria-label="Watch {{ page.gh_repo }} on GitHub">Watch</a>
               {% when 'star'%}
