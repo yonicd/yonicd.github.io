@@ -6,16 +6,16 @@ tags: [shiny, regex]
 
 This is a small package that uses [Shiny modules](https://shiny.rstudio.com/articles/modules.html) to solve a problem in Shiny selectize objects - [regular expression](https://www.rstudio.com/wp-content/uploads/2016/09/RegExCheatsheet.pdf) (regex) searching. You can quickly filter the values in the selectize object, while being able to add that new regex query to the selectize list. 
 
-This is great for long lists, since you can return multiple item simultaneously without needing to click  endlessly many items in a list!
+This is great for long lists, since you can return multiple item simultaneously without needing to endlessly click items in a list!
 
 ```r
 install.packages('regexSelect')
-#devtools::install_github('yonicd/regexSelect)
+#devtools::install_github('yonicd/regexSelect')
 ```
 
 Below are two examples of using regular expressions to quickly populate multiple items in a `ggplot` and a `datatable`. 
 
- 
+## regexSelect with Plots
 ![](https://raw.githubusercontent.com/yonicd/regexSelect/master/Miscellaneous/gifs/regexSelectPlot.gif)
 
 The shiny module works with two main functions:
@@ -27,12 +27,12 @@ The shiny module works with two main functions:
   regexSelectUI(id = "myId", label = 'myLabel', choices = <selectizeInput Choices>)
 ````
 
-regexSelect comes with controls placed in a group checkbox below the selectize object. When calling regexSelect you can show or hide the checkbox controls (hidden by default), as to make it look like a normal selectize object, and save valuable UI real-estate.
+regexSelect comes with controls placed in a group checkbox below the selectize object. When calling regexSelect you can show or hide the checkbox controls (hidden by default), as to make it look like a normal selectize object, and save valuable UI real estate.
 
-Through the checkbox controls you can 
-  - Force regexSelect to work as a standard selectize object
+While the shiny app is running regexSelect properties can be manipulated through the checkbox controls giving greater flexibilty to:
+  - Toggle regexSelect to work as a standard selectize object.
   - Retain the regex search as a new value the selectize object.
-  - Options that are passed to [grep](https://www.rdocumentation.org/packages/base/versions/3.4.1/topics/grep) : Ignore Case, Perl, Fixed, Invert
+  - Change arguments that are passed to [base::grep](https://www.rdocumentation.org/packages/base/versions/3.4.1/topics/grep) : `ignore.case`, `perl`, `fixed`, `invert`.
   
 ```r
 library(shiny)
@@ -94,9 +94,11 @@ shinyApp(ui, server)
 ```r
 ui <- shiny::fluidPage(
 
-  regexSelectUI(
-  id = "a", 
-  label = "Variable:",choices = names(iris)),
+  regexSelectUI(id = "a", 
+                label = "Variable:",
+                choices = names(iris)
+                ),
+  
   shiny::tableOutput("data")
 
 )
