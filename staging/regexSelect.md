@@ -4,6 +4,9 @@ title: Regular Expression Searching within Shiny Selectize Objects
 tags: [shiny, regex]
 ---
 
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/yonicd/regexSelect" data-show-count="true" aria-label="Star yonicd/regexSelect on GitHub">Star</a>
+
 [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/regexSelect?color=blue)](https://cran.r-project.org/package=regexSelect)![downloads](http://cranlogs.r-pkg.org/badges/grand-total/regexSelect) | 
 [![GitHub forks](https://img.shields.io/github/forks/yonicd/regexSelect.svg)](https://github.com/yonicd/regexSelect/network)[![GitHub stars](https://img.shields.io/github/stars/yonicd/regexSelect.svg)](https://github.com/yonicd/regexSelect/stargazers)[![GitHub issues](https://img.shields.io/github/issues/yonicd/regexSelect.svg)](https://github.com/yonicd/regexSelect/issues)
 
