@@ -19,9 +19,13 @@ Below are two examples of using regular expressions to quickly populate multiple
 ![](https://raw.githubusercontent.com/yonicd/regexSelect/master/Miscellaneous/gifs/regexSelectPlot.gif)
 
 The shiny module works with two main functions:
-
-  - server side: `callModule(module=regexSelect, id='myId', reactive(<selectizeInput Choices>))`
-  - ui side: `regexSelectUI(id = "myId", label = 'myLabel', choices = <selectizeInput Choices>)`
+```r
+# server side: 
+  callModule(module=regexSelect, id='myId', reactive(<selectizeInput Choices>))
+  
+# ui side: 
+  regexSelectUI(id = "myId", label = 'myLabel', choices = <selectizeInput Choices>)
+````
 
 ```r
 library(ggplot2)
@@ -55,15 +59,12 @@ server <- function(input, output, session) {
   
 shinyApp(ui, server)
 ```
-
 regexSelect comes with controls placed in a group checkbox below the selectize object. When calling regexSelect you can show or hide the checkbox controls, as to make it look like a normal selectize object, and save valuable UI real-estate.
 
-Through the checkbox controls (or in the regexSelect call) you can 
-
+Through the checkbox controls you can 
   - Force regexSelect to work as a standard selectize object
   - Retain the regex search as a new value the selectize object.
   - Options that are passed to [grep](https://www.rdocumentation.org/packages/base/versions/3.4.1/topics/grep) : Ignore Case, Perl, Fixed, Invert
-
 ```r
 require(shiny)
 
