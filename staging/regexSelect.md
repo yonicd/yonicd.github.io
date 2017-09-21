@@ -4,6 +4,8 @@ title: Regular Expression Searching within Shiny Selectize Objects
 tags: [shiny, regex]
 ---
 
+[![GitHub forks](https://img.shields.io/github/forks/yonicd/regexSelect.svg)](https://github.com/yonicd/regexSelect/network)[![GitHub stars](https://img.shields.io/github/stars/yonicd/regexSelect.svg)](https://github.com/yonicd/regexSelect/stargazers)
+
 This is a small package that uses [Shiny modules](https://shiny.rstudio.com/articles/modules.html) to solve a problem in Shiny selectize objects - [regular expression](https://www.rstudio.com/wp-content/uploads/2016/09/RegExCheatsheet.pdf) (regex) searching. You can quickly filter the values in the selectize object, while being able to add that new regex query to the selectize list. 
 
 This is great for long lists, since you can return multiple item simultaneously without needing to endlessly click items in a list!
