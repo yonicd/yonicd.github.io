@@ -33,6 +33,48 @@ The shiny module works with two main functions:
   regexSelectUI(id = "myId", label = 'myLabel', choices = <selectizeInput Choices>)
 ````
 
+## regexSelect with Tables
+
+![](https://raw.githubusercontent.com/yonicd/regexSelect/master/Miscellaneous/gifs/regexSelectTable.gif)
+
+```r
+ui <- shiny::fluidPage(
+
+  regexSelectUI(id = "a", 
+                label = "Variable:",
+                choices = names(iris)
+                ),
+  
+  shiny::tableOutput("data")
+
+)
+
+server <- function(input, output, session) {
+
+  curr_cols <- callModule(module = regexSelect, 
+                          id = "a",
+                          shiny::reactive(names(iris))
+                          )
+  
+  observeEvent(curr_cols(),{
+  
+    cols_now <- curr_cols()
+  
+    if( length(cols_now)==0 ) 
+        cols_now <- names(iris)
+  
+    output$data <- shiny::renderTable({
+    
+      iris[,cols_now , drop = FALSE]
+      
+    }, rownames = TRUE)
+    
+  })
+}
+
+shiny::shinyApp(ui, server)
+```
+
 regexSelect comes with controls placed in a group checkbox below the selectize object. When calling regexSelect you can show or hide the checkbox controls (hidden by default), as to make it look like a normal selectize object, and save valuable UI real estate.
 
 While the shiny app is running regexSelect properties can be manipulated through the checkbox controls giving greater flexibilty to:
@@ -93,46 +135,4 @@ server <- function(input, output, session) {
 }
   
 shinyApp(ui, server)
-```
-
-## regexSelect with Tables
-
-![](https://raw.githubusercontent.com/yonicd/regexSelect/master/Miscellaneous/gifs/regexSelectTable.gif)
-
-```r
-ui <- shiny::fluidPage(
-
-  regexSelectUI(id = "a", 
-                label = "Variable:",
-                choices = names(iris)
-                ),
-  
-  shiny::tableOutput("data")
-
-)
-
-server <- function(input, output, session) {
-
-  curr_cols <- callModule(module = regexSelect, 
-                          id = "a",
-                          shiny::reactive(names(iris))
-                          )
-  
-  observeEvent(curr_cols(),{
-  
-    cols_now <- curr_cols()
-  
-    if( length(cols_now)==0 ) 
-        cols_now <- names(iris)
-  
-    output$data <- shiny::renderTable({
-    
-      iris[,cols_now , drop = FALSE]
-      
-    }, rownames = TRUE)
-    
-  })
-}
-
-shiny::shinyApp(ui, server)
 ```

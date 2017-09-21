@@ -773,8 +773,3 @@ color: #f1c40f;
 .gist, .gist-file table tr td {
   border: unset;
 }
-
-.badge {
-    margin-left: 390px;
-    line-height: 0.72em;
-}
