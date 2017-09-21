@@ -11,18 +11,21 @@ layout: base
       {% if page.social-share %}
         {% include social-share.html %}
       {% endif %}
-
+      
       {% if page.repo %}
         {% if page.github.size>0 %}
           {% for badge in page.github %}
+          {% if badge=='follow'%}
+              <a class="github-button" href="https://github.com/yonicd" data-show-count="true" aria-label="Follow @yonicd on GitHub">Follow @yonicd</a>
+          {% endif %}
           {% if badge=='star'%}
               <a class="github-button" href="https://github.com/{{ page.repo }}" data-show-count="true" aria-label="Star {{ page.repo }} on GitHub">Star</a> 
           {% endif %}
           {% if badge=='fork'%}
-             <a class="github-button" href="https://github.com/{{ page.repo }}/fork" data-show-count="true" aria-label="Fork {{ page.repo }} on GitHub">Fork</a>
+             <a class="github-button" href="https://github.com/{{ page.repo }}/{{ badge }}" data-show-count="true" aria-label="Fork {{ page.repo }} on GitHub">Fork</a>
           {% endif %}
-          {% if badge=='issue'%}
-              <a class="github-button" href="https://github.com/{{ page.repo }}/issues" data-show-count="true" aria-label="Issue {{ page.repo }} on GitHub">Issue</a>
+          {% if badge=='issues'%}
+              <a class="github-button" href="https://github.com/{{ page.repo }}/{{ badge }}" data-show-count="true" aria-label="Issue {{ page.repo }} on GitHub">Issue</a>
           {% endif %}
           {% endfor %}
         {% endif %}
