@@ -5,7 +5,7 @@ tags: [shiny, regex]
 cran: regexSelect
 cranbadge: [status, downloads]
 repo: yonicd/regexSelect
-github: [star, fork, issues]
+github: [star, fork, issue]
 ---
 
 <!---
