@@ -14,8 +14,8 @@ layout: base
       
       {% if page.gh_repo %}
       <p>
-        {% if page.github_badge.size>0 %}
-          {% for badge in page.github_badge %}
+        {% if page.gh_badge.size>0 %}
+          {% for badge in page.gh_badge %}
           {% if badge=='follow'%}
               <a class="github-button" href="https://github.com/yonicd" data-show-count="true" aria-label="Follow @yonicd on GitHub">Follow @yonicd</a>
           {% endif %}
