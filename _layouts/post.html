@@ -41,7 +41,7 @@ layout: base
       
        {% if page.cran %}
        <p>
-        {% if page.cranbadge.size>0 %}
+        {% if page.cran_badge.size>0 %}
           {% for cbadge in page.cranbadge %}
           {% if cbadge=='status'%}
       <a href="https://cran.r-project.org/package={{ page.cran }}"><img src="https://www.r-pkg.org/badges/version/{{ page.cran }}?color=blue" alt="CRAN_Status_Badge" /></a>

@@ -3,7 +3,7 @@ layout: post
 title: Regular Expression Searching within Shiny Selectize Objects
 tags: [shiny, regex]
 cran: regexSelect
-cranbadge: [status, downloads]
+cran_badge: [status, downloads]
 repo: yonicd/regexSelect
 github: [follow, star, fork, issue]
 ---
