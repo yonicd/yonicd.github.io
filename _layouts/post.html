@@ -40,7 +40,7 @@ layout: base
       {% endif %}
       
        {% if page.cran %}
-       <p>
+       <div class="badge">
         {% if page.cran_badge.size>0 %}
           {% for badge in page.cran_badge %}
             {% case badge %}
@@ -51,7 +51,7 @@ layout: base
             {% endcase %}
           {% endfor %}
         {% endif %}
-        </p>
+        </div>
       {% endif %}
 
 
