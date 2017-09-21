@@ -13,6 +13,7 @@ layout: base
       {% endif %}
       
       {% if page.repo %}
+      <p>
         {% if page.github.size>0 %}
           {% for badge in page.github %}
           {% if badge=='follow'%}
@@ -35,9 +36,11 @@ layout: base
           {% endif %}
           {% endfor %}
         {% endif %}
+        </p>
       {% endif %}
       
        {% if page.cran %}
+       <p>
         {% if page.cranbadge.size>0 %}
           {% for cbadge in page.cranbadge %}
           {% if cbadge=='status'%}
@@ -48,6 +51,7 @@ layout: base
           {% endif %}
           {% endfor %}
         {% endif %}
+        </p>
       {% endif %}
 
 
