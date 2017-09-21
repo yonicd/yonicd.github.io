@@ -12,27 +12,27 @@ layout: base
         {% include social-share.html %}
       {% endif %}
       
-      {% if page.repo %}
+      {% if page.gh_repo %}
       <p>
-        {% if page.github.size>0 %}
-          {% for badge in page.github %}
+        {% if page.github_badge.size>0 %}
+          {% for badge in page.github_badge %}
           {% if badge=='follow'%}
               <a class="github-button" href="https://github.com/yonicd" data-show-count="true" aria-label="Follow @yonicd on GitHub">Follow @yonicd</a>
           {% endif %}
           {% if badge=='watch'%}
-              <a class="github-button" href="https://github.com/yonicd/{{ page.repo }}/subscription" data-show-count="true" aria-label="Watch {{ page.repo }} on GitHub">Watch</a>
+              <a class="github-button" href="https://github.com/yonicd/{{ page.gh_repo }}/subscription" data-show-count="true" aria-label="Watch {{ page.gh_repo }} on GitHub">Watch</a>
           {% endif %}
           {% if badge=='star'%}
-              <a class="github-button" href="https://github.com/{{ page.repo }}" data-show-count="true" aria-label="Star {{ page.repo }} on GitHub">Star</a> 
+              <a class="github-button" href="https://github.com/{{ page.gh_repo }}" data-show-count="true" aria-label="Star {{ page.gh_repo }} on GitHub">Star</a> 
           {% endif %}
           {% if badge=='fork'%}
-             <a class="github-button" href="https://github.com/{{ page.repo }}/fork" data-show-count="true" aria-label="Fork {{ page.repo }} on GitHub">Fork</a>
+             <a class="github-button" href="https://github.com/{{ page.gh_repo }}/fork" data-show-count="true" aria-label="Fork {{ page.gh_repo }} on GitHub">Fork</a>
           {% endif %}
           {% if badge=='issue'%}
-              <a class="github-button" href="https://github.com/{{ page.repo }}/issues" data-show-count="true" aria-label="Issue {{ page.repo }} on GitHub">Issue</a>
+              <a class="github-button" href="https://github.com/{{ page.gh_repo }}/issues" data-show-count="true" aria-label="Issue {{ page.gh_repo }} on GitHub">Issue</a>
           {% endif %}
           {% if badge=='download'%}
-              <a class="github-button" href="https://github.com/{{ page.repo }}/archive/master.zip" aria-label="Download {{ page.repo }} on GitHub">Download</a>
+              <a class="github-button" href="https://github.com/{{ page.gh_repo }}/archive/master.zip" aria-label="Download {{ page.gh_repo }} on GitHub">Download</a>
           {% endif %}
           {% endfor %}
         {% endif %}

@@ -4,8 +4,8 @@ title: Regular Expression Searching within Shiny Selectize Objects
 tags: [shiny, regex]
 cran: regexSelect
 cran_badge: [status, downloads]
-repo: yonicd/regexSelect
-github: [follow, star, fork, issue]
+gh_repo: yonicd/regexSelect
+gh_badge: [follow, star, fork, issue]
 ---
 
 <!---
