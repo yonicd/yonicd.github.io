@@ -10,7 +10,9 @@ Many of the projects are part of [open tools](https://www.metrumrg.com/try-open-
 
 The icons at the end of each description show what where the project is maintained and links are attached to each one to take you to the relevant page. 
 
-Github: ![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/img/ghicon.jpeg) | CRAN: ![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/ggedit?color=blue) | bl.ocks: ![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/img/d3js.jpeg)
+|Github | CRAN | bl.ocks|
+|:--:|:--:|:--:|
+|[![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/img/ghicon.jpeg)](https://github.com) | [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/ggedit?color=blue)](https://cran.r-project.org/) | [![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/img/d3js.jpeg)](https://bl.ocks.org/)|
   
 (Not in any logical order, just what came to mind when I wrote this...)
 
