@@ -10,7 +10,7 @@ The icons at the end of each description show where the project is maintained an
 
 | Metrum | Github | CRAN | bl.ocks |
 |:--:|:--:|:--:|:--:|
-|[![](img/mrgiconnew.jpg)](https://www.metrumrg.com/open-science)|[![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/img/ghicon.jpeg)](https://github.com) | [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/ggedit?color=blue)](https://cran.r-project.org/) | [![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/img/d3js.jpeg)](https://bl.ocks.org/)|
+|[![](img/mrgiconnew.jpg)](https://www.metrumrg.com/open-science)|[![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/img/ghicon.jpeg)](https://github.com) | [![](https://img.shields.io/badge/CRAN--blue.svg)](https://cran.r-project.org/) | [![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/img/d3js.jpeg)](https://bl.ocks.org/)|
   
 (Not in any logical order, just what came to mind when I wrote this...)
 
