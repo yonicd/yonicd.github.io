@@ -26,6 +26,7 @@ navbar-links:
   About Me: "aboutme"
   Research: "research"
   Projects: "projects"
+  R Social Network: "rsocial"
   Resources:
     - Metrum Research: "http://www.metrumrg.com/"
     - R-bloggers: "http://www.r-bloggers.com"
