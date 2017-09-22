@@ -6,13 +6,13 @@ subtitle: Odds and Ends
 
 This is a list of R packages that have been published on CRAN and/or are still being developed on Github. 
 
-Many of the projects are part of [open tools](https://www.metrumrg.com/try-open-source-tools/) developed at Metrum Research Group. The icon [![](img/mrgiconnew.jpg)](https://www.metrumrg.com/open-science) denotes a Metrum project.
+Many of the projects are part of [open tools](https://www.metrumrg.com/try-open-source-tools/) developed at Metrum Research Group.
 
 The icons at the end of each description show what where the project is maintained and links are attached to each one to take you to the relevant page. 
 
-|Github | CRAN | bl.ocks|
-|:--:|:--:|:--:|
-|[![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/img/ghicon.jpeg)](https://github.com) | [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/ggedit?color=blue)](https://cran.r-project.org/) | [![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/img/d3js.jpeg)](https://bl.ocks.org/)|
+| Metrum | Github | CRAN | bl.ocks |
+|:--:|:--:|:--:|:--:|
+|[![](img/mrgiconnew.jpg)](https://www.metrumrg.com/open-science)|[![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/img/ghicon.jpeg)](https://github.com) | [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/ggedit?color=blue)](https://cran.r-project.org/) | [![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/img/d3js.jpeg)](https://bl.ocks.org/)|
   
 (Not in any logical order, just what came to mind when I wrote this...)
 
