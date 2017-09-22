@@ -4,9 +4,7 @@ title: Projects
 subtitle: Odds and Ends
 ---
 
-This is a list of R packages that have been published on CRAN and/or are still being developed on Github. 
-
-Many of the projects are part of [open tools](https://www.metrumrg.com/try-open-source-tools/) developed at Metrum Research Group.
+This is a list of R packages that have been published on CRAN and/or are still being developed on Github. Many of the projects are part of [open tools](https://www.metrumrg.com/try-open-source-tools/) developed at Metrum Research Group.
 
 The icons at the end of each description show what where the project is maintained and links are attached to each one to take you to the relevant page. 
 
