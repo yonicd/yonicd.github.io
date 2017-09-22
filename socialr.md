@@ -1,7 +1,6 @@
 ---
 layout: page
-title: Projects
-subtitle: Odds and Ends
+title: R Development Network
 ---
 
-The R social network.
+The R development network.
