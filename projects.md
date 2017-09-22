@@ -8,7 +8,10 @@ This is a list of R packages that have been published on CRAN and/or are still b
 
 Many of the projects are part of [open tools](https://www.metrumrg.com/try-open-source-tools/) developed at Metrum Research Group. The icon [![](img/mrgiconnew.jpg)](https://www.metrumrg.com/open-science) denotes a Metrum project.
 
+The icons at the end of each description show what where the project is maintained and links are attached to each one to take you to the relevant page. 
 
+Github: ![](img/ghicon.jpeg), CRAN: ![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/ggedit?color=blue), bl.ocks: ![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/img/d3js.jpeg)
+  
 (Not in any logical order, just what came to mind when I wrote this...)
 
 *Reproduciblity*
@@ -37,9 +40,9 @@ Many of the projects are part of [open tools](https://www.metrumrg.com/try-open-
 
   - **jsTree** : Create and customize interactive trees using the jQuery jsTree plugin library and the htmlwidgets package. These trees can be used directly from the R console, from RStudio, in Shiny apps and R Markdown documents.[![](img/mrgiconnew.jpg)](https://www.metrumrg.com/open-science)[![](img/ghicon.jpeg)](https://github.com/metrumresearchgroup/jsTree)
 
-  - **d3Tree** : Create and customize interactive collapsible D3 trees using the D3 JavaScript library and the htmlwidgets package. These trees can be used directly from the R console, from RStudio, in Shiny apps and R Markdown documents. When in Shiny the tree layout is observed by the server and can be used as a reactive filter of structured data. [![](img/mrgiconnew.jpg)](https://www.metrumrg.com/open-science)[![](img/ghicon.jpeg)](https://github.com/metrumresearchgroup/d3Tree)![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/img/d3js.jpeg)[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/d3Tree?color=blue)](https://cran.r-project.org/package=d3Tree)![downloads](https://cranlogs.r-pkg.org/badges/d3Tree)
+  - **d3Tree** : Create and customize interactive collapsible D3 trees using the D3 JavaScript library and the htmlwidgets package. These trees can be used directly from the R console, from RStudio, in Shiny apps and R Markdown documents. When in Shiny the tree layout is observed by the server and can be used as a reactive filter of structured data. [![](img/mrgiconnew.jpg)](https://www.metrumrg.com/open-science)[![](img/ghicon.jpeg)](https://github.com/metrumresearchgroup/d3Tree)[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/d3Tree?color=blue)](https://cran.r-project.org/package=d3Tree)![downloads](https://cranlogs.r-pkg.org/badges/d3Tree)
 
-  - **fluidSpline** : Htmlwidget that binds of [fork](https://bl.ocks.org/yonicd/4bc59fca901388ebe4905bdb19af1567) of [Spline Editor](https://bl.ocks.org/mbostock/4342190) by Mike Bostock to create an observable object in Shiny. [![](img/mrgiconnew.jpg)](https://www.metrumrg.com/open-science)[![](img/ghicon.jpeg)](https://github.com/metrumresearchgroup/fluidSpline)![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/img/d3js.jpeg)
+  - **fluidSpline** : Htmlwidget that binds a fork of [Spline Editor](https://bl.ocks.org/mbostock/4342190) by Mike Bostock to create an observable object in Shiny. [![](img/mrgiconnew.jpg)](https://www.metrumrg.com/open-science)[![](img/ghicon.jpeg)](https://github.com/metrumresearchgroup/fluidSpline)[![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/img/d3js.jpeg)](https://bl.ocks.org/yonicd/4bc59fca901388ebe4905bdb19af1567)
 
 *Stats*
 
