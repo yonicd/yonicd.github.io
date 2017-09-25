@@ -110,7 +110,7 @@ levels(boxplot_dat$variable) <- c('per 1,000 Individuals who have\nselected a ma
   theme(legend.position = 'bottom')
 ```
 
-![](ACA_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
+![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/staging/ACA_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
 
 
 ```r
@@ -131,35 +131,35 @@ p <- kf%>%ggplot(aes(x=Location,xend=Location,yend=ratio_GC,y=ratio_ACA,colour=r
 p + facet_wrap(~ TrumpWin , scales='free_y')
 ```
 
-![](ACA_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
+![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/staging/ACA_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
 
 
 ```r
 p + facet_wrap(~ Expansion , scales='free_y')
 ```
 
-![](ACA_files/figure-html/unnamed-chunk-10-1.png)<!-- -->
+![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/staging/ACA_files/figure-html/unnamed-chunk-10-1.png)<!-- -->
 
 
 ```r
 p + facet_wrap(~ Expansion + TrumpWin , scales='free_y')
 ```
 
-![](ACA_files/figure-html/unnamed-chunk-11-1.png)<!-- -->
+![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/staging/ACA_files/figure-html/unnamed-chunk-11-1.png)<!-- -->
 
 
 ```r
 p + facet_wrap(~ Marketplace_Type, scales='free_y')
 ```
 
-![](ACA_files/figure-html/unnamed-chunk-12-1.png)<!-- -->
+![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/staging/ACA_files/figure-html/unnamed-chunk-12-1.png)<!-- -->
 
 
 ```r
 p + facet_wrap(~ Expansion + Marketplace_Type , scales='free_y')
 ```
 
-![](ACA_files/figure-html/unnamed-chunk-13-1.png)<!-- -->
+![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/staging/ACA_files/figure-html/unnamed-chunk-13-1.png)<!-- -->
 
 
 ```r
@@ -194,7 +194,7 @@ states_facet%>%
        caption='Source: Kaiser Family Foundation')
 ```
 
-![](ACA_files/figure-html/unnamed-chunk-15-1.png)<!-- -->
+![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/staging/ACA_files/figure-html/unnamed-chunk-15-1.png)<!-- -->
 
 
 ```r
@@ -213,4 +213,4 @@ states_facet%>%
        caption='Source: Kaiser Family Foundation')
 ```
 
-![](ACA_files/figure-html/unnamed-chunk-16-1.png)<!-- -->
+![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/staging/ACA_files/figure-html/unnamed-chunk-16-1.png)<!-- -->
