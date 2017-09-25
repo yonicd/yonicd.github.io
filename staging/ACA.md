@@ -4,8 +4,8 @@ September 24, 2017
 
 
 
-![](GettyImages_846510344.0.jpg)
-![](ACA_pie.png)
+![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/staging/GettyImages_846510344.0.jpg)
+![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/staging/ACA_pie.png)
 
 ACA and Graham-Cassidy federal spending by state. 
 
