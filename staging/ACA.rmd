@@ -1,15 +1,26 @@
-# ACA
-Jonathan Sidi  
-September 24, 2017  
+---
+title: "ACA"
+author: "Jonathan Sidi"
+date: "September 24, 2017"
+output: 
+  html_document:
+    keep_md: true
+---
 
-
+```{r,include=FALSE}
+library(xml2)
+library(rvest)
+library(dplyr)
+library(ggplot2)
+library(geofacet)
+knitr::opts_chunk$set(fig.height=7,fig.width=12)
+```
 
 ![](GettyImages_846510344.0.jpg)
 ![](ACA_pie.png)
 
 ACA and Graham-Cassidy federal spending by state. 
-
-```r
+```{r}
 kf_spending <- (xml2::read_html('http://www.kff.org/health-reform/issue-brief/state-by-state-estimates-of-changes-in-federal-spending-on-health-care-under-the-graham-cassidy-bill/')%>%
   rvest::html_table())[[2]][-c(1,2,3,55),]
 
@@ -22,8 +33,7 @@ kf_spending <- kf_spending%>%mutate_at(.vars=vars(ACA,GC,DIFF,PCT),.funs=funs(as
 
 ACA medicare expansion by state
 
-
-```r
+```{r}
 #http://www.kff.org/health-reform/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D
 kf_expansion <- read.csv('~/Desktop/kf2_raw_data.csv',stringsAsFactors = FALSE,skip = 2)
 kf_expansion <- kf_expansion[-c(1,53:61),-3]
@@ -32,8 +42,7 @@ names(kf_expansion)[2] <- 'Expansion'
 
 Population of ACA enrollment by state.
 
-
-```r
+```{r}
 #http://www.kff.org/health-reform/state-indicator/total-marketplace-enrollment/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Total%20Individuals%20Who%20Have%20Selected%20a%20Marketplace%20Plan%22,%22sort%22:%22asc%22%7D
 kf_marketplace_pop <- read.csv('~/Desktop/kf_raw_data.csv',stringsAsFactors = FALSE,skip = 2)
 kf_marketplace_pop <- kf_marketplace_pop[-c(1,53:59),]
@@ -42,8 +51,7 @@ names(kf_marketplace_pop)[c(2,3)] <- c('Marketplace_Type','N')
 
 2016 general election popular vote by state, to get characteristic of political leaning of states. 
 
-
-```r
+```{r}
 wiki_elections <- (xml2::read_html('https://en.wikipedia.org/wiki/United_States_presidential_election,_2016')%>%
         rvest::xml_nodes(xpath='//*[@id="mw-content-text"]/div/div[40]/table')%>%
         rvest::html_table())[[1]][-c(1,58),c(1,3,6,23)]
@@ -69,8 +77,7 @@ wiki_pop$Total_N <- as.numeric(gsub('[,]','',wiki_pop$Total_N))
 
 Join all the data sets
 
-
-```r
+```{r}
 kf <- kf_marketplace_pop%>%
   left_join(kf_expansion,by='Location')%>%
   left_join(wiki_pop,by='Location')
@@ -89,8 +96,8 @@ kf$Location <- factor(kf$Location,levels = kf$Location)
 kf$Marketplace_Type <- factor(kf$Marketplace_Type,labels=c('Federally-Facilitated Market','State-based Marketplace','State-based Marketplace (using HealthCare.gov)'))
 ```
 
+```{r}
 
-```r
 boxplot_dat <- kf%>%
   dplyr::select(Expansion,Marketplace_Type,ratio_DIFF,tot_ratio_DIFF)%>%
   reshape2::melt(.,id=c('Marketplace_Type','Expansion'))
@@ -108,12 +115,10 @@ levels(boxplot_dat$variable) <- c('per 1,000 Individuals who have\nselected a ma
          y='Change in Federal Funds ($ Millions) per 1,000 individuals')+
   theme_bw()+
   theme(legend.position = 'bottom')
+
 ```
 
-![](ACA_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
-
-
-```r
+```{r}
 p <- kf%>%ggplot(aes(x=Location,xend=Location,yend=ratio_GC,y=ratio_ACA,colour=ratio_DIFF))+
   geom_segment(arrow = arrow(length = unit(0.02, "npc")))+
   coord_flip()+
@@ -126,59 +131,35 @@ p <- kf%>%ggplot(aes(x=Location,xend=Location,yend=ratio_GC,y=ratio_ACA,colour=r
   theme(legend.position = 'bottom')
 ```
 
-
-```r
+```{r}
 p + facet_wrap(~ TrumpWin , scales='free_y')
 ```
 
-![](ACA_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
-
-
-```r
+```{r}
 p + facet_wrap(~ Expansion , scales='free_y')
 ```
 
-![](ACA_files/figure-html/unnamed-chunk-10-1.png)<!-- -->
-
-
-```r
+```{r}
 p + facet_wrap(~ Expansion + TrumpWin , scales='free_y')
 ```
 
-![](ACA_files/figure-html/unnamed-chunk-11-1.png)<!-- -->
-
-
-```r
+```{r}
 p + facet_wrap(~ Marketplace_Type, scales='free_y')
 ```
 
-![](ACA_files/figure-html/unnamed-chunk-12-1.png)<!-- -->
-
-
-```r
+```{r}
 p + facet_wrap(~ Expansion + Marketplace_Type , scales='free_y')
 ```
 
-![](ACA_files/figure-html/unnamed-chunk-13-1.png)<!-- -->
-
-
-```r
+```{r}
 states_facet <- state_ranks%>%left_join(kf%>%rename(name=Location),by='name')
-```
 
-```
-## Warning: Column `name` joining character vector and factor, coercing into
-## character vector
-```
-
-```r
 states_facet$Expansion <- factor(states_facet$Expansion,labels=c('Expansion','No Expansion'))
 
 states_facet$tile_lbl <- sprintf('%s\n%s',states_facet$Expansion,states_facet$TrumpWin)
 ```
 
-
-```r
+```{r}
 states_facet%>%
   ggplot(aes(x='1', y='1',fill=tot_ratio_DIFF)) +
   geom_tile() +
@@ -194,10 +175,7 @@ states_facet%>%
        caption='Source: Kaiser Family Foundation')
 ```
 
-![](ACA_files/figure-html/unnamed-chunk-15-1.png)<!-- -->
-
-
-```r
+```{r}
 states_facet%>%
   ggplot(aes(x='1', y='1',fill=ratio_DIFF)) +
   geom_tile() +
@@ -212,5 +190,3 @@ states_facet%>%
   labs(title='Change in Federal Funds per 1,000 Individuals who have\nselected a market based plan ACA vs Graham-Cassidy, 2020-2026',
        caption='Source: Kaiser Family Foundation')
 ```
-
-![](ACA_files/figure-html/unnamed-chunk-16-1.png)<!-- -->
