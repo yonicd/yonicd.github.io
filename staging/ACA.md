@@ -78,31 +78,31 @@ p <- kf%>%ggplot(aes(x=Location,xend=Location,yend=ratio_X3,y=ratio_X2,colour=ra
 p + facet_wrap(~ TrumpWin , scales='free_y')
 ```
 
-![](ACA_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
+![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/staging/ACA_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
 
 ```r
 p + facet_wrap(~ Expansion , scales='free_y')
 ```
 
-![](ACA_files/figure-html/unnamed-chunk-7-2.png)<!-- -->
+![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/staging/ACA_files/figure-html/unnamed-chunk-7-2.png)<!-- -->
 
 ```r
 p + facet_wrap(~ Expansion + TrumpWin , scales='free_y')
 ```
 
-![](ACA_files/figure-html/unnamed-chunk-7-3.png)<!-- -->
+![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/staging/ACA_files/figure-html/unnamed-chunk-7-3.png)<!-- -->
 
 ```r
 p + facet_wrap(~ Marketplace_Type, scales='free_y')
 ```
 
-![](ACA_files/figure-html/unnamed-chunk-7-4.png)<!-- -->
+![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/staging/ACA_files/figure-html/unnamed-chunk-7-4.png)<!-- -->
 
 ```r
 p + facet_wrap(~ Expansion + Marketplace_Type , scales='free_y')
 ```
 
-![](ACA_files/figure-html/unnamed-chunk-7-5.png)<!-- -->
+![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/staging/ACA_files/figure-html/unnamed-chunk-7-5.png)<!-- -->
 
 
 ```r
