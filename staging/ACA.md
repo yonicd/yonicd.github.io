@@ -1,13 +1,10 @@
----
-layout: post
-title: ACA
-tags: [ggplot2,geofacet]
----
+# ACA
+Jonathan Sidi  
+September 24, 2017  
 
 I have been trying to decipher for myself, what is in the current (well, yesterday's) Graham-Cassidy health care bill. I saw this image on many news outlets a few days ago and my inner hate for pie charts bubbled up.
 
 ![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/staging/GettyImages_846510344.0.jpg)
-
 
 This is a zoom in on the pie chart ... From what I can gather, these figures are attempting to say that there are specific states that are getting more of the federal health care funds under the Afordable Care Act (ACA) than their state population. So among the many things that are really hard to do with pie charts , comparing distributions ranks pretty high up there.
 
@@ -21,36 +18,20 @@ Hopefully this post will help motivate readers to start looking around for more 
 
 My sources of information is the Kaiser Family Foundation site that have a great database for data on the ACA and the proposed bill, and Wikipedia for auxilary population data. We will end up with the following figure, but along the way I learned a number of things that I didn't know from reading online and seeing the news on TV. 
 
-![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/staging/ACA_files/figure-html/unnamed-chunk-16-1.png)<!-- -->
+![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/staging/ACA_files/figure-html/unnamed-chunk-17-1.png)<!-- -->
+
+A quick note before you proceed - This is not meant to be an all encompassing analysis of the predicted effects of the Graham-Cassidy bill, as it has been said before: "Healthcare is hard...", and if I made any bad assumptions I apologize in advanced and welcome any comments and suggestions to better understand the subject matter. 
+
+Saying that, let's continue: 
 
 
 ```r
 library(xml2)
 library(rvest)
 library(dplyr)
-```
-
-```
-## 
-## Attaching package: 'dplyr'
-```
-
-```
-## The following objects are masked from 'package:stats':
-## 
-##     filter, lag
-```
-
-```
-## The following objects are masked from 'package:base':
-## 
-##     intersect, setdiff, setequal, union
-```
-
-```r
 library(ggplot2)
 library(geofacet)
-knitr::opts_chunk$set(fig.height=7,fig.width=12)
+knitr::opts_chunk$set(fig.height=7,fig.width=12,warning=FALSE,message=FALSE)
 ```
 
 
@@ -157,9 +138,27 @@ kf$Marketplace_Type <- factor(kf$Marketplace_Type,labels=c('Federally-Facilitate
 
 ## Plots
 
+### Percent of state population enrolled in ACA
+
+First we want to see what is the scope of the population in each state that have selected an ACA market based plan. (note California... not quite 12% of the US population)
+
+
+```r
+kf%>%
+  mutate(pop_pct=100*N/Total_N)%>%
+  arrange(desc(pop_pct))%>%
+  mutate(Location=factor(Location,levels=Location))%>%
+  ggplot(aes(x=Location,y=pop_pct))+
+  geom_point()+
+  coord_flip()+
+  labs(y='Percent of Population that have selected an ACA market based plan')
+```
+
+![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/staging/ACA_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
+
 ### Overall distribution by Medicare Expansion
 
-First we check that there really is a difference between states that expanded and did not expand medicaid under the ACA and if being a state that voted Republican compared to Democratic.
+We then check that there really is a difference between states that expanded and did not expand medicaid under the ACA and if being a state that voted Republican compared to Democratic.
 
 
 ```r
@@ -182,7 +181,7 @@ levels(boxplot_dat$variable) <- c('per 1,000 Individuals who have\nselected a ma
   theme(legend.position = 'bottom')
 ```
 
-![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/staging/ACA_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
+![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/staging/ACA_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
 
 Drilling down to state level figures we show for each state the change from ACA funding to the proposed GC funding per 1,000 persons who selected a market based ACA plan. The arrows move from ACA to GC funding and the y-axis is ordered by the increasing net difference. This comparison is faceted among the different characteristics scrapped from above. 
 
@@ -213,7 +212,7 @@ p <- kf%>%ggplot(aes(x=Location,xend=Location,yend=ratio_GC,y=ratio_ACA,colour=r
 p + facet_wrap(~ TrumpWin , scales='free_y')
 ```
 
-![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/staging/ACA_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
+![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/staging/ACA_files/figure-html/unnamed-chunk-10-1.png)<!-- -->
 
 ### ACA Medicare expansion 
 
@@ -222,7 +221,7 @@ p + facet_wrap(~ TrumpWin , scales='free_y')
 p + facet_wrap(~ Expansion , scales='free_y')
 ```
 
-![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/staging/ACA_files/figure-html/unnamed-chunk-10-1.png)<!-- -->
+![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/staging/ACA_files/figure-html/unnamed-chunk-11-1.png)<!-- -->
 
 ### ACA Medicare expansion and Political Leaning
 
@@ -231,7 +230,7 @@ p + facet_wrap(~ Expansion , scales='free_y')
 p + facet_wrap(~ Expansion + TrumpWin , scales='free_y')
 ```
 
-![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/staging/ACA_files/figure-html/unnamed-chunk-11-1.png)<!-- -->
+![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/staging/ACA_files/figure-html/unnamed-chunk-12-1.png)<!-- -->
 
 ### State Marketplace Type
 
@@ -240,7 +239,7 @@ p + facet_wrap(~ Expansion + TrumpWin , scales='free_y')
 p + facet_wrap(~ Marketplace_Type, scales='free_y')
 ```
 
-![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/staging/ACA_files/figure-html/unnamed-chunk-12-1.png)<!-- -->
+![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/staging/ACA_files/figure-html/unnamed-chunk-13-1.png)<!-- -->
 
 ### ACA Medicare expansion and State Marketplace Type
 
@@ -249,7 +248,7 @@ p + facet_wrap(~ Marketplace_Type, scales='free_y')
 p + facet_wrap(~ Expansion + Marketplace_Type , scales='free_y')
 ```
 
-![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/staging/ACA_files/figure-html/unnamed-chunk-13-1.png)<!-- -->
+![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/staging/ACA_files/figure-html/unnamed-chunk-14-1.png)<!-- -->
 
 ### Geofaceting
 
@@ -258,14 +257,7 @@ Lastly, we construct geographic representation of the difference between the ACA
 
 ```r
 states_facet <- state_ranks%>%left_join(kf%>%rename(name=Location),by='name')
-```
 
-```
-## Warning: Column `name` joining character vector and factor, coercing into
-## character vector
-```
-
-```r
 states_facet$Expansion <- factor(states_facet$Expansion,labels=c('Expansion','No Expansion'))
 
 states_facet$tile_lbl <- sprintf('%s\n%s',states_facet$Expansion,states_facet$TrumpWin)
@@ -290,7 +282,7 @@ states_facet%>%
        caption='Source: Kaiser Family Foundation')
 ```
 
-![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/staging/ACA_files/figure-html/unnamed-chunk-15-1.png)<!-- -->
+![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/staging/ACA_files/figure-html/unnamed-chunk-16-1.png)<!-- -->
 
 #### ACA enrollment population
 
@@ -311,4 +303,4 @@ states_facet%>%
        caption='Source: Kaiser Family Foundation')
 ```
 
-![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/staging/ACA_files/figure-html/unnamed-chunk-16-1.png)<!-- -->
+![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/staging/ACA_files/figure-html/unnamed-chunk-17-1.png)<!-- -->
