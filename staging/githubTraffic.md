@@ -4,12 +4,12 @@ title: Combining Github repositories traffic plots
 tags: [Rselenium, webscraping]
 ---
 
-This post will show how to use the [RSelenium](https://cran.r-project.org/web/packages/RSelenium/vignettes/RSelenium-basics.html) package to scrape your own github account to retrieve all that fun traffic data and create a single traffic plot for your account. 
+This post will show how to use the [RSelenium](https://cran.r-project.org/web/packages/RSelenium/vignettes/RSelenium-basics.html) package to scrape your own github account to retrieve all that fun traffic data of clones and visits and create a single traffic plot for your account. 
 
 
 ![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/img/gh_traffic.jpg)
 
-for the single file you can find it in [gist](https://gist.github.com/yonicd/a05c4d85f7884c517a6cfa6aff24f59a)
+For the single file you can find it in this [gist](https://gist.github.com/yonicd/a05c4d85f7884c517a6cfa6aff24f59a) file.
 
 ## Packages
 
