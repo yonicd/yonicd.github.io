@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Combining Github Traffic Plots Across Repositories
-tags: [Rselenium, webscraping]
+tags: [rstats, Rselenium, webscraping]
 ---
 
 This post will show how to use the [RSelenium](https://cran.r-project.org/web/packages/RSelenium/vignettes/RSelenium-basics.html) package to scrape your own github account to retrieve all that fun traffic data of clones and visits and create a single traffic plot for your account. 
