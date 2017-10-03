@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Combining Github repositories traffic plots
+title: Combining Github Traffic Plots Across Repositories
 tags: [Rselenium, webscraping]
 ---
 
