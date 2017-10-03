@@ -108,17 +108,19 @@ ggplot(plot_data,aes(x=date,y=value,colour=repo))+
   theme(axis.text.x = element_text(angle=90),legend.position = 'top')+
   labs(title=sprintf('Github Team: %s',gh_team))
 }
+```
 
-# run the function
-
+## Run the function
+```r
 traffic_plot <- github_traffic(gh_user=gh_user,
                                gh_pass=gh_pass,
                                gh_team=gh_team,
                                repos=repos)
+```
 
-# print the plot                               
+## Print the plot                               
+```r
 traffic_plot
-                               
 ```
 
 If the function fails for some reason this will release the port Rselenium is holding ransom.
