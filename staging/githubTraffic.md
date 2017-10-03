@@ -92,8 +92,8 @@ plot_data <- plyr::ldply(out,function(repo){
                     unique = as.numeric(sapply(getNodeSet(dat[[4]],'circle'),XML::xmlGetAttr,name = 'cy')))
     
     # Because this is a d3.js object there are some technical details that
-    # I'm skipping here, but in short the y values need to be rescaled to show the
-    # actual values that you need.
+    # I'm skipping here, but in short the y values need to be rescaled 
+    # to show the actual values that you need.
     x$total <- scales::rescale(x$total,rev(range(yticks_total)))
     x$unique <- scales::rescale(x$unique,rev(range(yticks_unique)))
     
