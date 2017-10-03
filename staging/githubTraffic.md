@@ -73,7 +73,7 @@ names(out) <- repos
 remDr$close()
 rD[["server"]]$stop()
 
-# sort the data from html into a data.frame
+# scrape the data from html into a data.frame
 
 plot_data <- plyr::ldply(out,function(repo){
   plyr::mdply(names(repo),function(type){
@@ -82,6 +82,7 @@ plot_data <- plyr::ldply(out,function(repo){
   
     if(is.null(dat)) return(NULL)
     
+    # tick values we need for rescaling
     yticks_total <- as.numeric(sapply(getNodeSet(dat[[2]],'g'),XML::xmlValue))
     yticks_unique <- as.numeric(sapply(getNodeSet(dat[[5]],'g'),XML::xmlValue))
     
@@ -90,13 +91,16 @@ plot_data <- plyr::ldply(out,function(repo){
                     total = as.numeric(sapply(getNodeSet(dat[[3]],'circle'),XML::xmlGetAttr,name = 'cy')),
                     unique = as.numeric(sapply(getNodeSet(dat[[4]],'circle'),XML::xmlGetAttr,name = 'cy')))
     
-    x$total <- rescale(x$total,rev(range(yticks_total)))
-    x$unique <- rescale(x$unique,rev(range(yticks_unique)))
+    # Because this is a d3.js object there are some technical details that
+    # I'm skipping here, but in short the y values need to be rescaled to show the
+    # actual values that you need.
+    x$total <- scales::rescale(x$total,rev(range(yticks_total)))
+    x$unique <- scales::rescale(x$unique,rev(range(yticks_unique)))
     
+    #rehape the data.frame from wide to long
     x%>%reshape2::melt(.,c('type','date'),variable.name=c('metric'))
   })
-},.id='repo')%>%select(-X1)
-
+},.id='repo')
 
 #Create the plot
 
