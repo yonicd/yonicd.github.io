@@ -123,6 +123,8 @@ traffic_plot <- github_traffic(gh_user=gh_user,
 traffic_plot
 ```
 
+![](https://raw.githubusercontent.com/yonicd/yonicd.github.io/master/img/gh_traffic.jpg)
+
 If the function fails for some reason this will release the port Rselenium is holding ransom.
 ```r
 rD <- rsDriver(verbose = FALSE,port=4444L)
