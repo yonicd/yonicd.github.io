@@ -83,6 +83,6 @@ p <- ggplot(plot_data,aes(x=date,y=value,colour=repo))+
 
 htmlwidgets::saveWidget(plotly::ggplotly(p),file = '~/projects/yonicd.github.io/github_traffic/github_traffic.html',selfcontained = TRUE)
 
-system('git add github_traffic/github_traffic.html')
-system('git commit -m "update traffic"')
-system('git push origin master')
+# system('git add github_traffic/github_traffic.html')
+# system('git commit -m "update traffic"')
+# system('git push origin master')
