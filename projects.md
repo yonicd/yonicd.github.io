@@ -30,7 +30,7 @@ The icons at the end of each description show where the project is maintained an
 
 *Shiny Apps, Modules and Gadgets*
 
-  - **regexSelect** : R package to enable regular expression searches within a shiny selectize object. [![](img/ghicon.jpeg)](https://github.com/yonicd/regexSelect)
+  - **regexSelect** : R package to enable regular expression searches within a shiny selectize object. [![](img/ghicon.jpeg)](https://github.com/yonicd/regexSelect)[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/regexSelect?color=blue)](https://cran.r-project.org/package=regexSelect)![downloads](https://cranlogs.r-pkg.org/badges/regexSelect)
 
   - **shinyHeatmaply** : Access functionality of the [heatmaply](https://github.com/talgalili/heatmaply) package through Shiny application and Shiny gadget. [![](img/ghicon.jpeg)](https://github.com/yonicd/shinyHeatmaply) [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/shinyHeatmaply?color=blue)](https://cran.r-project.org/package=shinyHeatmaply) ![downloads](https://cranlogs.r-pkg.org/badges/shinyHeatmaply)
 
