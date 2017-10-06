@@ -52,10 +52,10 @@ The icons at the end of each description show where the project is maintained an
 
 *Random thoughts that weren't packaged, but are still useful.*
 
-- **Elections** : Real time tracker and analysis of 2016 USA Elections [![](img/ghicon.jpeg)](https://github.com/yonicd/Elections)
+  - **Elections** : Real time tracker and analysis of 2016 USA Elections [![](img/ghicon.jpeg)](https://github.com/yonicd/Elections)
 
-- **CIMDO** : Shiny Dashboard for the IMF CIMDO model. [![](img/ghicon.jpeg)](https://github.com/yonicd/CIMDO)
+  - **CIMDO** : Shiny Dashboard for the IMF CIMDO model. [![](img/ghicon.jpeg)](https://github.com/yonicd/CIMDO)
 
-- **supermarketprices** : Read daily suprmarket data in all israel stores. [![](img/ghicon.jpeg)](https://github.com/yonicd/supermarketprices)
+  - **supermarketprices** : Read daily suprmarket data in all israel stores. [![](img/ghicon.jpeg)](https://github.com/yonicd/supermarketprices)
 
-- **taseR** : API to read data from Tel Aviv Stock Exchange (TASE) website to R. [![](img/ghicon.jpeg)](https://github.com/yonicd/taseR)
+  - **taseR** : API to read data from Tel Aviv Stock Exchange (TASE) website to R. [![](img/ghicon.jpeg)](https://github.com/yonicd/taseR)
