@@ -3,6 +3,10 @@ layout: post
 title: ggedit 0.2.0
 subtitle: Crantastic!
 tags: [Shiny, ggplot2, Reproducibility]
+cran: ggedit
+cran_badge: [status, downloads]
+gh_repo: metrumresearchgroup/ggedit
+gh_badge: [follow, star, fork]
 ---
 
 We are pleased to announce the release of the ggedit package on [CRAN](https://cran.r-project.org/web/packages/ggedit/index.html). 
