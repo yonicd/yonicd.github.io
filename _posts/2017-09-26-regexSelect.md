@@ -4,8 +4,8 @@ title: Regular Expression Searching within Shiny Selectize Objects
 tags: [rstats, shiny, regex]
 cran: regexSelect
 cran_badge: [status, downloads]
-gh-repo: yonicd/regexSelect
-gh-badge: [follow, star, issue]
+gh_repo: yonicd/regexSelect
+gh_badge: [follow, star, issue]
 ---
 
 regexSelect is a small package that uses [Shiny modules](https://shiny.rstudio.com/articles/modules.html) to solve a problem in Shiny selectize objects - [regular expression](https://www.rstudio.com/wp-content/uploads/2016/09/RegExCheatsheet.pdf) (regex) searching. You can quickly filter the values in the selectize object, while being able to add that new regex query to the selectize list. 
