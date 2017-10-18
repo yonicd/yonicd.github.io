@@ -73,6 +73,8 @@ plot_data <- github_traffic(gh_user=gh_user,
                                gh_team=gh_team,
                                repos=repos)
 
+saveRDS(plot_data,file = sprintf('~/projects/yonicd.github.io/github_traffic/data/%s_gh_traffic.rds',format(Sys.time(),format = '%Y%m%d_%H%M')))
+
 p <- ggplot(plot_data,aes(x=date,y=value,colour=repo))+
   geom_line()+geom_point()+
   facet_grid(type~metric,scales='free_y')+
@@ -83,6 +85,11 @@ p <- ggplot(plot_data,aes(x=date,y=value,colour=repo))+
 
 htmlwidgets::saveWidget(plotly::ggplotly(p),file = '~/projects/yonicd.github.io/github_traffic/github_traffic.html',selfcontained = TRUE)
 
+thiswd <- getwd()
+setwd() <- '~/projects/yonicd.github.io'
+
 system('git add github_traffic')
 system('git commit -m "update traffic"')
 system('git push origin master')
+
+setwd() <- thiswd
